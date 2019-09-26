@@ -38,7 +38,7 @@ bes1 <- na.omit(bes) # removes observations with NAs
 head(bes) # shows first observations of original dataframe
 head(bes1) # shows first observations of clean dataframe
 dim(bes) # provides dimensions (rows, columns) of original dataframe
-dim(bes) # provides dimensions (rows, columns) of clean dataframe
+dim(bes1) # provides dimensions (rows, columns) of clean dataframe
 
 ## Two-way frequency tables
 table(bes1$leave, bes1$education) # two−way frequency table
