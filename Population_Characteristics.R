@@ -91,8 +91,8 @@ dim(dis1) # provides dimensions (rows, columns) of clean dataframe
 
 ## Scatter plot
 plot(dis1$high_education, dis1$leave) # scatter plot x, y
-abline (v=mean(dis$high_education), lty="dashed") # adds straight, dashed vertical line to plot
-abline(h=mean(dis$leave), lty="dashed") # adds straight, dashed horizontal line to plot
+abline(v=mean(dis1$high_education), lty="dashed") # adds straight, dashed vertical line to plot
+abline(h=mean(dis1$leave), lty="dashed") # adds straight, dashed horizontal line to plot
 
 ## Correlation
 cor(dis1$high_education, dis1$leave) # calculates correlation
