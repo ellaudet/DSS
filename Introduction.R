@@ -13,7 +13,7 @@ star <- read.csv("STAR.csv") # reads and stores data
 ## (Read about description of variables and unit of observation)
 View(star) # opens new tab with entire dataset
 head(star) # shows the first six rows
-head(star, n=3) # shows the first three rows
+head(star, n = 3) # shows the first three rows
 ## What does each observation represent?
 ## Substantively interpret the first observation
 

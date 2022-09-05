@@ -18,6 +18,10 @@ var(flips)  # calculates the variance
 
 ### 6.4.2 THE NORMAL DISTRIBUTION
 
+## Set the working directory
+setwd("~/Desktop/DSS") # example of setwd() for Mac 
+setwd("C:/user/Desktop/DSS") # example for Windows
+
 ## Illustration from Chapter 2
 star <- read.csv("STAR.csv") # reads and stores data
 hist(star$reading, freq=FALSE) # creates density histogram

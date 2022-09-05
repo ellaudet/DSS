@@ -18,8 +18,8 @@ head(star) # shows the first six observations
 star$classtype=="small" 
 
 ## Creating new variables
-ifelse(star$classtype=="small",1,0) # creates contents of variable
-star$small <- ifelse(star$classtype=="small",1,0) # creates new variable
+ifelse(star$classtype=="small", 1, 0) # creates contents of variable
+star$small <- ifelse(star$classtype=="small", 1, 0) # creates new variable
 head(star) # shows first observations
 
 ## Subsetting variables
@@ -39,3 +39,4 @@ mean(star$graduated[star$small==1]) - mean(star$graduated[star$small==0])
 ## To help with interpretation
 mean(star$graduated[star$small==1]) # mean of graduated for treatment group
 mean(star$graduated[star$small==0]) # mean of graduated for control group
+0.8735043 - 0.8664731 # difference-in-means for graduated
