@@ -1,6 +1,6 @@
 ## 1. INTRODUCTION
 
-## 1.6 LOADING AND MAKING SENSE OF DATA
+## 1.7 LOADING AND MAKING SENSE OF DATA
 
 ## STEP 1. Set the working directory
 setwd("~/Desktop/DSS") # example of setwd() for Mac 
@@ -10,10 +10,10 @@ setwd("C:/user/Desktop/DSS") # example for Windows
 star <- read.csv("STAR.csv") # reads and stores data
 
 ## STEP 3. Understand the data
-## (Read about description of variables and unit of observation)
-View(star) # opens new tab with entire dataset
+View(star) # opens a new tab with contents of dataset
 head(star) # shows the first six rows
-head(star, n = 3) # shows the first three rows
+head(star, n=3) # shows the first three rows
+## (Read about description of variables and unit of observation)
 ## What does each observation represent?
 ## Substantively interpret the first observation
 
@@ -23,7 +23,7 @@ head(star, n = 3) # shows the first three rows
 ## STEP 5. Identify the number of observations
 dim(star) # provides dimensions of dataframe: rows, columns
 
-## 1.7 COMPUTING AND INTERPRETING MEANS
+## 1.8 COMPUTING AND INTERPRETING MEANS
 
 ## Accessing variables inside dataframes
 star$reading

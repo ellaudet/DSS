@@ -1,6 +1,6 @@
 ## 5. ESTIMATING CAUSAL EFFECTS WITH OBSERVATIONAL DATA
 
-## 5.3 THE EFFECT OF RUSSIAN TV ON UKRAINIANS' 2014 VOTING BEHAVIOR
+## 5.3 THE EFFECT OF RUSSIAN TV ON UKRAINIANS' VOTING BEHAVIOR
 
 ## Set the working directory
 setwd("~/Desktop/DSS") # example of setwd() for Mac 
@@ -19,7 +19,8 @@ head(uas) # shows first observations
 ## Identify the number of observations
 dim(uas) # provides dimensions of dataframe: rows, columns
 
-### 5.3.1 USING THE SIMPLE LINEAR MODEL TO COMPUTE THE DIFFERENCE-IN-MEANS ESTIMATOR
+### 5.3.1 USING THE SIMPLE LINEAR MODEL TO COMPUTE 
+### THE DIFFERENCE-IN-MEANS ESTIMATOR
 
 ## Option A: Compute the difference-in-means estimator directly
 mean(uas$pro_russian_vote[uas$russian_tv==1])-
@@ -28,7 +29,8 @@ mean(uas$pro_russian_vote[uas$russian_tv==1])-
 ## Option B: Fit linear model
 lm(pro_russian_vote ~ russian_tv, data=uas) 
 
-### 5.3.2 CONTROLLING FOR CONFOUNDERS USING A MULTIPLE LINEAR REGRESSION MODEL
+### 5.3.2 CONTROLLING FOR CONFOUNDERS 
+### USING A MULTIPLE LINEAR REGRESSION MODEL
 
 ## Compute correlation
 cor(uas$within_25km, uas$russian_tv)
@@ -39,7 +41,7 @@ table(uas$within_25km, uas$russian_tv)
 ## Fit linear model
 lm(pro_russian_vote ~ russian_tv + within_25km, data=uas) 
 
-## 5.4 THE EFFECT OF RUSSIAN TV ON UKRAINIAN 2014 ELECTORAL OUTCOMES
+## 5.4 THE EFFECT OF RUSSIAN TV ON UKRAINIAN ELECTORAL OUTCOMES
 
 ## Set the working directory
 setwd("~/Desktop/DSS") # example of setwd() for Mac 
@@ -58,7 +60,8 @@ head(uap) # shows first observations
 ## Identify the number of observations
 dim(uap) # provides dimensions of dataframe: rows, columns
 
-### 5.4.1 USING THE SIMPLE LINEAR MODEL TO COMPUTE THE DIFFERENCE-IN-MEANS ESTIMATOR
+### 5.4.1 USING THE SIMPLE LINEAR MODEL TO COMPUTE 
+### THE DIFFERENCE-IN-MEANS ESTIMATOR
 
 ## Create pro-Russian change variable
 uap$pro_russian_change <- uap$pro_russian - uap$prior_pro_russian
@@ -69,7 +72,8 @@ hist(uap$pro_russian_change)
 ## Fit linear model
 lm(pro_russian_change ~ russian_tv, data=uap)
 
-### 5.4.2 CONTROLLING FOR CONFOUNDERS USING A MULTIPLE LINEAR REGRESSION MODEL
+### 5.4.2 CONTROLLING FOR CONFOUNDERS 
+### USING A MULTIPLE LINEAR REGRESSION MODEL
 
 ## Compute correlation
 cor(uap$within_25km, uap$russian_tv)

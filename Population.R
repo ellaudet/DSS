@@ -20,10 +20,10 @@ head(bes) # shows first observations
 dim(bes) # provides dimensions of dataframe: rows, columns
 
 ## Predicting the referendum outcome
-## Frequency table
+## Frequency tables
 table(bes$vote) # creates frequency table of vote
 
-## Table of proportions 
+## Tables of proportions 
 ## option a: create frequency table first
 freq_table <- table(bes$vote) # object with frequency table
 prop.table(freq_table) # creates table of proportions
@@ -39,12 +39,12 @@ mean(bes$leave) # mean() without removing NAs
 mean(bes$leave, na.rm=TRUE) # mean() removing NAs
 bes1 <- na.omit(bes) # removes observations with NAs
 head(bes) # shows first observations of original dataframe
-head(bes1) # shows first observations of clean dataframe
+head(bes1) # shows first observations of new dataframe
 dim(bes) # provides dimensions (rows, columns) of original dataframe
-dim(bes1) # provides dimensions (rows, columns) of clean dataframe
+dim(bes1) # provides dimensions (rows, columns) of new dataframe
 
 ## Two-way frequency tables
-table(bes1$leave, bes1$education)
+table(bes1$leave, bes1$education) 
 
 ## Two-way tables of proportions
 prop.table(table(bes1$leave, bes1$education)) 
@@ -57,10 +57,16 @@ hist(bes1$age[bes1$leave==0]) # creates histogram for non−supporters
 hist(bes1$age[bes1$leave==1]) # creates histogram for supporters
 
 ## Density histograms
-hist(bes1$age[bes1$education==1]) # (frequency) histogram for respondents w/ no qualifications
-hist(bes1$age[bes1$education==4]) # (frequency) histogram for respondents  w/ undergraduate degree
-hist(bes1$age[bes1$education==1], freq=FALSE) # density histogram for respondents w/ no qualifications
-hist(bes1$age[bes1$education==4], freq=FALSE) # density histogram for respondents  w/ undergraduate degree
+## Create histograms
+hist(bes1$age[bes1$education==1]) # for respondents w/ no qualifications
+hist(bes1$age[bes1$education==4]) # for respondents w/ undergraduate degree
+## Create density histograms
+hist(bes1$age[bes1$education==1], freq=FALSE) # for respondents w/ no qualifications
+hist(bes1$age[bes1$education==4], freq=FALSE) # for respondents w/ undergraduate degree
+
+## Create density histograms
+hist(bes1$age[bes1$leave==0], freq=FALSE) # for non-supporters
+hist(bes1$age[bes1$leave==1], freq=FALSE) # for supporters
 
 ## Descriptive statistics
 mean(bes1$age[bes1$leave==0]) # mean age of non−supporters
@@ -69,7 +75,7 @@ median(bes1$age[bes1$leave==0]) # median age of non−supporters
 median(bes1$age[bes1$leave==1]) # median age of supporters
 sd(bes1$age[bes1$leave==0]) # sd of age for non−supporters
 sd(bes1$age[bes1$leave==1]) # sd of age for supporters
-var(bes1$age[bes1$leave==1]) # variance of age of supporters
+var(bes1$age[bes1$leave==1]) # variance of age for supporters
 sd(bes1$age[bes1$leave==1])^2 # square of sd of age for supporters
 sqrt(var(bes1$age[bes1$leave==1])) # square root of variance of age for supporters
 
@@ -94,12 +100,16 @@ dim(dis) # provides dimensions of dataframe: rows, columns
 
 ## Handling missing data
 dis1 <- na.omit(dis) # removes observations with NAs
-dim(dis1) # provides dimensions (rows, columns) of clean dataframe
+dim(dis1) # provides dimensions (rows, columns) of new dataframe
 
 ## Scatter plot
-plot(dis1$high_education, dis1$leave) # scatter plot X, Y
-abline(v=mean(dis1$high_education), lty="dashed") # adds straight, dashed vertical line to plot
-abline(h=mean(dis1$leave), lty="dashed") # adds straight, dashed horizontal line to plot
+plot(dis1$high_education, dis1$leave) # creates scatter plot, required arguments in this order: X, Y
+plot(x=dis1$high_education, y=dis1$leave) # creates scatter plot, using names of the arguments 
+plot(y=dis1$leave, x=dis1$high_education) # creates scatter plot, using names of the arguments
+
+## Add straight dashed lines to the most recent graph
+abline(v=mean(dis1$high_education), lty="dashed") # vertical
+abline(h=mean(dis1$leave), lty="dashed") # horizontal
 
 ## Correlation
 cor(dis1$high_education, dis1$leave) # calculates correlation between X and Y

@@ -10,7 +10,7 @@ setwd("C:/user/Desktop/DSS") # example for Windows
 star <- read.csv("STAR.csv") # reads and stores data
 
 ## Look at the data
-head(star) # shows the first six observations
+head(star) # shows first observations
 
 ## Relational operators in R
 3==3 # example of a TRUE statement
@@ -39,4 +39,4 @@ mean(star$graduated[star$small==1]) - mean(star$graduated[star$small==0])
 ## To help with interpretation
 mean(star$graduated[star$small==1]) # mean of graduated for treatment group
 mean(star$graduated[star$small==0]) # mean of graduated for control group
-0.8735043 - 0.8664731 # difference-in-means for graduated
+0.8735043 - 0.8664731 # difference-in-means estimator for graduated
