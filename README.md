@@ -43,4 +43,4 @@ This repository contains the R scripts (.R files) and datasets (.csv files) used
   * R Script: Uncertainty.R
   * Datasets: BES.csv, STAR.csv, countries.csv, UA_survey.csv
 
-We recommend downloading the whole folder, saving it directly on your Desktop, and re-naming it DSS. We recommend this because the code in the book assumes that the folder with all of the datasets is (1) named DSS (all in capital letters and without any spaces) and (2) saved directly on your Desktop. If you choose to save the folder elsewhere, the book provides instructions for making the necessary changes to the code.
+We recommend downloading the whole folder, saving it directly on your Desktop, and re-naming it DSS. The code provided assumes that the folder with all of the datasets is (1) named DSS (all in capital letters and without any spaces) and (2) saved directly on your Desktop. If you choose to save the folder elsewhere, the book provides instructions for making the necessary changes to the code.
