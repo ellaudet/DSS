@@ -1,7 +1,7 @@
 # DSS
 **The DSS folder**
 
-## Code and Datasets Necessary to Complete the Exercises in [Elena Llaudet and Kosuke Imai. _Data Analysis for Social Science, A Friendly and Practical Introduction_ (Princeton University Press, 2022)](https://press.princeton.edu/books/paperback/9780691199436/data-analysis-for-social-science)
+## Datasets and Code for [Elena Llaudet and Kosuke Imai. _Data Analysis for Social Science, A Friendly and Practical Introduction_ (Princeton University Press, 2022)](https://press.princeton.edu/books/paperback/9780691199436/data-analysis-for-social-science)
 
 This repository contains the R scripts (.R files) and datasets (.csv files) used in the book exercises.
 
