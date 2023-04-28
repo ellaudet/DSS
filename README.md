@@ -6,6 +6,7 @@
 This repository contains the R scripts (.R files) and datasets (.csv files) used in the book exercises.
 
 * Chapter 1: Introduction
+  * Goal: Lay Groundwork for Forthcoming Analyses  
   * R Script: Introduction.R
   * Dataset: STAR.csv
   
