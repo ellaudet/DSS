@@ -3,14 +3,17 @@
 ## 2.5 DO SMALL CLASSES IMPROVE STUDENT PERFORMANCE?
 
 ## Set the working directory
-setwd("~/Desktop/DSS") # example of setwd() for Mac 
-setwd("C:/user/Desktop/DSS") # example for Windows
+## (delete the lines of code that are not for your computer, and
+##  if using Windows, replace "username" with your own username)
+setwd("~/Desktop/DSS") # if Mac
+setwd("C:/Users/username/Desktop/DSS") # if Windows
+setwd("/cloud/project/DSS") # if in the cloud
 
 ## Load the dataset
 star <- read.csv("STAR.csv") # reads and stores data
 
 ## Look at the data
-head(star) # shows first observations
+head(star) # shows the first six observations
 
 ## Relational operators in R
 3==3 # example of a TRUE statement
@@ -39,4 +42,4 @@ mean(star$graduated[star$small==1]) - mean(star$graduated[star$small==0])
 ## To help with interpretation
 mean(star$graduated[star$small==1]) # mean of graduated for treatment group
 mean(star$graduated[star$small==0]) # mean of graduated for control group
-0.8735043 - 0.8664731 # difference-in-means estimator for graduated
+0.8735043 - 0.8664731 # difference-in-means for graduated
