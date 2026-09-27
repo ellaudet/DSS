@@ -1,4 +1,4 @@
-## DSS: Datasets and Code for *Data Analysis for Social Science*
+## DSS: Datasets and Code for *Data Analysis for Social Science* (First Edition)
 
 <a href="https://github.com/ellaudet/DSS/releases/latest/download/DSS.zip"><img src="download_box.png" alt="Click here to download the DSS folder (DSS.zip)" width="700"></a>
 
