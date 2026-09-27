@@ -45,5 +45,3 @@ Here is an overview:
   * Goal: Complete Some of the Analyses from Chapters 2 through 5 by Quantifying the Uncertainty in the Empirical Findings
   * R Script: Uncertainty.R
   * Datasets: BES.csv, STAR.csv, countries.csv, UA_survey.csv
-
-We recommend downloading the whole folder, saving it directly on your Desktop, and re-naming it DSS. The code provided assumes that the folder with all of the datasets is (1) named DSS (all in capital letters and without any spaces) and (2) saved directly on your Desktop. If you choose to save the folder elsewhere, the book provides instructions for making the necessary changes to the code.
