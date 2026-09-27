@@ -1,4 +1,4 @@
-## The DSS Folder: Datasets and Code for Llaudet and Imai's *Data Analysis for Social Science* (Princeton University Press, First Edition)
+## The DSS Folder: Datasets and Code for the First Edition of Llaudet and Imai's *Data Analysis for Social Science* (DSS)
 
 <a href="https://github.com/ellaudet/DSS/releases/latest/download/DSS.zip"><img src="download_box.png" alt="Click here to download the DSS folder (DSS.zip)" width="700"></a>
 
