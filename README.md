@@ -1,5 +1,8 @@
 ## DSS: Datasets and Code for Data Analysis for Social Science
 
+To download the DSS folder, click here: [DSS.zip]( https://github.com/ellaudet/DSS/releases/latest/download/DSS.zip) 
+Then, find it in your computer (usually in your Downloads folder),  unzip it (on Mac:..., Windows: right-click the file and select Extract All), save it *directly* on your Desktop, make sure it is stored locally and not just in the cloud, and that it is named exactly DSS (all capital letters, no spaces, no numbers). The code provided in the book assumes that the folder with all the datasets is (1) named excatly DSS and (2) saved directly on your Desktop. If you choose to save the folder elsewhere, the book provides instructions for making the necessary changes to the code.
+
 This repository contains the R scripts (.R files) and datasets (.csv files) used in [Elena Llaudet and Kosuke Imai. _Data Analysis for Social Science, A Friendly and Practical Introduction_ (Princeton University Press, 2022)](https://press.princeton.edu/books/paperback/9780691199436/data-analysis-for-social-science), DSS for short.
 
 Here is an overview:
