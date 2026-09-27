@@ -4,8 +4,6 @@
 
 (If clicking the box above does not work, use this link: [DSS.zip](https://github.com/ellaudet/DSS/releases/latest/download/DSS.zip).)
 
-**You only need the file DSS.zip. You do not need a GitHub account, and you can ignore everything else on this page.**
-
 <details>
 <summary><b>What is in the DSS folder?</b> (click to expand)</summary>
 
