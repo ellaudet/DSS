@@ -6,8 +6,6 @@
 
 **You only need the file DSS.zip. You do not need a GitHub account, and you can ignore everything else on this page.**
 
-The code provided in the book assumes that the folder with all the datasets is (1) named exactly DSS and (2) saved directly on your Desktop. If you choose to save the folder elsewhere, the book provides instructions for making the necessary changes to the code.
-
 <details>
 <summary><b>What is in the DSS folder?</b> (click to expand)</summary>
 
