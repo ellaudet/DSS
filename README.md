@@ -1,3 +1,41 @@
+# DSS: Datasets and Code for *Data Analysis for Social Science*
+
+## 👉 Download the DSS folder here:
+
+[![Download DSS.zip](https://img.shields.io/badge/Download-DSS.zip-2ea44f?style=for-the-badge)](https://github.com/ellaudet/DSS/releases/latest/download/DSS.zip)
+
+> [!IMPORTANT]
+> **You only need the file above.** You do not need a GitHub account, and you can ignore everything else on this page.
+
+### Then follow these steps:
+
+1. **Find** the file DSS.zip on your computer (usually in your Downloads folder).
+2. **Unzip** it:
+   - on a Mac, double-click the file;
+   - on Windows, right-click the file and select *Extract All*.
+3. **Move** the resulting DSS folder *directly* onto your Desktop.
+4. **Check** that:
+   - the folder is named exactly **DSS** (all capital letters, no spaces, no numbers; e.g., not "DSS 2" or "DSS (1)"), and
+   - it is stored locally on your computer, not only in the cloud (e.g., iCloud or OneDrive).
+
+The code provided in the book assumes that the DSS folder is (1) named exactly DSS and (2) saved directly on your Desktop. If you save it elsewhere, see subsection 1.7.1 of the book for how to change the code.
+
+---
+
+<details>
+<summary><b>What is in the DSS folder?</b> (click to expand)</summary>
+
+The DSS folder contains the R scripts (.R files) and datasets (.csv files) used in [Elena Llaudet and Kosuke Imai. _Data Analysis for Social Science, A Friendly and Practical Introduction_ (Princeton University Press, 2022)](https://press.princeton.edu/books/paperback/9780691199436/data-analysis-for-social-science), DSS for short.
+
+* Chapter 1: Introduction
+  * Goal: Lay Groundwork for Forthcoming Analyses
+  * R Script: Introduction.R
+  * Dataset: STAR.csv
+
+  ... (the rest of your chapter list, unchanged) ...
+
+</details>
+
 ## DSS: Datasets and Code for Data Analysis for Social Science
 
 **To download the DSS folder, click here: [DSS.zip](https://github.com/ellaudet/DSS/releases/latest/download/DSS.zip).**
